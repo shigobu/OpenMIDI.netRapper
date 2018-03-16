@@ -1,30 +1,29 @@
 #pragma once
-#include "MIDIIO.h"
 #include <tchar.h>
-
-class MIDIIOPPin
+#include "MIDIIO.h"
+class MIDIIOPPout
 {
 public:
-	MIDIIOPPin();
-	~MIDIIOPPin();
+	MIDIIOPPout();
+	~MIDIIOPPout();
 
 	static long GetDeviceNum();
 	static long GetDeviceName(long lIndex, TCHAR* pszDeviceName, long lLen);
 
-	void Open(const TCHAR* pszDeviceName);		//ñﬂÇËílÇÕÉÅÉìÉoïœêîÇ÷äiî[
+	void Open(const TCHAR* pszDeviceName);
 	void Reopen(const TCHAR* pszDeviceName);
 
 	long Close();
 
 	long Reset();
 
-	long GetMIDIMessage(unsigned char* pMessage, long lLen);
+	long PutMIDIMessage(unsigned char* pMessage, long lLen);
 
 	long GetThisDeviceName(TCHAR* pszCeviceName, long lLen);
 
-	MIDIIn * getMIDIobj();
-	
+	MIDIOut * getMIDIobj();
+
 private:
-	MIDIIn *pMIDIIn;
+	MIDIOut * pMIDIOut;
 };
 

@@ -35,7 +35,9 @@ void MIDIIOPPin::Reopen(const TCHAR * pszDeviceName)
 
 long MIDIIOPPin::Close()
 {
-	return MIDIIn_Close(pMIDIIn);
+	long retval = MIDIIn_Close(pMIDIIn);
+	pMIDIIn = NULL;
+	return retval;
 }
 
 long MIDIIOPPin::Reset()
@@ -51,4 +53,9 @@ long MIDIIOPPin::GetMIDIMessage(unsigned char * pMessage, long lLen)
 long MIDIIOPPin::GetThisDeviceName(TCHAR * pszCeviceName, long lLen)
 {
 	return MIDIIn_GetThisDeviceName(pMIDIIn, pszCeviceName, lLen);
+}
+
+MIDIIn * MIDIIOPPin::getMIDIobj()
+{
+	return pMIDIIn;
 }

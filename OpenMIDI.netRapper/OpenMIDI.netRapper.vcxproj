@@ -140,6 +140,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MIDIIOPPin.h" />
+    <ClInclude Include="MIDIIOPPout.h" />
     <ClInclude Include="OpenMIDI.netRapper.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
@@ -147,6 +148,7 @@
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="MIDIIOPPin.cpp" />
+    <ClCompile Include="MIDIIOPPout.cpp" />
     <ClCompile Include="OpenMIDI.netRapper.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

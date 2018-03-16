@@ -27,6 +27,9 @@
     <ClInclude Include="MIDIIOPPin.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
+    <ClInclude Include="MIDIIOPPout.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="OpenMIDI.netRapper.cpp">
@@ -39,6 +42,9 @@
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="MIDIIOPPin.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MIDIIOPPout.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>

@@ -38,7 +38,7 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="MIDIIOPP.cpp">
+    <ClCompile Include="MIDIIOPPin.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>

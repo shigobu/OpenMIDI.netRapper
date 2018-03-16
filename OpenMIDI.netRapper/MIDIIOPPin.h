@@ -23,6 +23,6 @@ public:
 	long GetThisDeviceName(TCHAR* pszCeviceName, long lLen);
 	
 private:
-	MIDIIn pMIDIIn;
+	MIDIIn *pMIDIIn;
 };
 

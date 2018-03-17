@@ -1,6 +1,7 @@
 #pragma once
 #include <tchar.h>
 #include "MIDIIO.h"
+
 class MIDIIOPPout
 {
 public:

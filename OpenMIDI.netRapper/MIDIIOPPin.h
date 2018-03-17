@@ -1,6 +1,6 @@
 #pragma once
-#include "MIDIIO.h"
 #include <tchar.h>
+#include "MIDIIO.h"
 
 class MIDIIOPPin
 {

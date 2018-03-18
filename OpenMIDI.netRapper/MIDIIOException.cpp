@@ -2,14 +2,14 @@
 #include "MIDIIOException.h"
 
 
-MIDIIOException::MIDIIOException()
+OpenMIDInetRapper::MIDIIOException::MIDIIOException()
 {
 }
 
-MIDIIOException::MIDIIOException(String ^ message) : Exception(message)
+OpenMIDInetRapper::MIDIIOException::MIDIIOException(String ^ message) : Exception(message)
 {
 }
 
-MIDIIOException::MIDIIOException(String ^ message, Exception ^ inner) : Exception(message, inner)
+OpenMIDInetRapper::MIDIIOException::MIDIIOException(String ^ message, Exception ^ inner) : Exception(message, inner)
 {
 }
